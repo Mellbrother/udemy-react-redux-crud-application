@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function App() {
-	return (
-		<React.Fragment>
-			<lable htmlFor="bar">bar</lable>
-			<input type="text" onClick={() => {console.log("I am clicked")}}/>
-		</React.Fragment>
-	)
+class App extends Component {
+	render() {
+		return (
+			<React.Fragment>
+				<lable htmlFor="bar">bar</lable>
+				<input type="text" onClick={() => {console.log("I am clicked")}}/>
+			</React.Fragment>
+		)
+	}	
 }
+
+
+// function App() {
+// 	return (
+// 		<React.Fragment>
+// 			<lable htmlFor="bar">bar</lable>
+// 			<input type="text" onClick={() => {console.log("I am clicked")}}/>
+// 		</React.Fragment>
+// 	)
+// }
 
 export default App;
